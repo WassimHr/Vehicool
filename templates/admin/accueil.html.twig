@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+
+{% block title %}
+	AccueilAdmin
+{% endblock %}
+
+
+{% block body %}
+	<h1 class="text-center my-5">Admin accueil</h1>
+
+	<div class="text-center">
+    <a class="btn btn-info m-3" href="{{ path('adminAdd') }}">Ajouter une voiture</a>
+    <a class="btn btn-info m-3" href="{{ path('voiture') }}">Gestion des voitures</a>
+    <a class="btn btn-info m-3" href="{{ path('users') }}">Gestion des utilisateurs</a>
+
+    </div>
+{% endblock %}

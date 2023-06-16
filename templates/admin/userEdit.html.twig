@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+
+{% block title %}
+	Edit User
+{% endblock %}
+{% block body %}
+	<h1 class="text-center my-3">Modifier</h1>
+<div>
+  <form method="POST">
+    <div class="form-group col-6 m-auto text-center"> <!-- Ajout de la classe "text-center" pour centrer le contenu -->
+      <label for="role" class="form-label mt-4 text-white">Choisir un rôle</label>
+      <select class="form-select" name="role">
+        <option value="admin">Admin</option>
+        <option value="user">User</option>
+      </select>
+      <button class="btn btn-success my-3" type="submit">Modifier</button>
+    </div>
+  </form>
+</div>
+{% endblock %}
+
+ 

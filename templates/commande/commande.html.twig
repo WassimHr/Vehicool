@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Commande Ajout
+{% endblock %}
+
+{% block body %}
+    <div class="form-group row col-4 m-auto text-center">
+    <h1 class="text-center my-3">Passer une reservation</h1>
+        {{ form_start(formCommande) }}
+        {{ form_label(formCommande.date_heure_depart) }}
+        {{ form_widget(formCommande.date_heure_depart) }}
+
+        {{ form_label(formCommande.date_heure_fin) }}
+        {{ form_widget(formCommande.date_heure_fin) }}
+
+       <button class="btn btn-success mt-3" type="submit">Valider</button>
+        {{ form_end(formCommande) }} 
+        
+
+    </div>
+{% endblock %}
